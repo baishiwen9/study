@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>study@lazy-load</title>
+    <style>
+        .div1{
+            width: 100%;
+            height: 220px;
+            background:red;
+        }
+
+        .div2{
+            width: 100%;
+            height: 220px;
+            background:blue;
+        }
+
+        .div3{
+            width: 100%;
+            height: 220px;
+            background:yellow;
+        }
+
+        .div4{
+            width: 100%;
+            height: 220px;
+            background:greenyellow;
+        }
+        .lazyload{
+            width: 100%;
+            height: 220px;
+        }
+
+        .root2{
+            height: 450px;
+            overflow-y: auto;
+        }
+        
+
+    </style>
+    <script src="./../dist/common.min.js"></script>
+</head>
+<body>
+    <!-- <div class="root">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <img class="lazyload" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589187665358&di=0118a4491fc8067c9845bc4597566901&imgtype=0&src=http%3A%2F%2Fzkres0.myzaker.com%2F201806%2F5b2cbabaa07aec900301e844_640.jpg"  src="" />
+        <div class="div4"></div>
+        <div class="div4"></div>
+        <div class="div4"></div>
+        <img class="lazyload" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589187665358&di=0118a4491fc8067c9845bc4597566901&imgtype=0&src=http%3A%2F%2Fzkres0.myzaker.com%2F201806%2F5b2cbabaa07aec900301e844_640.jpg"  src="" />
+
+    </div> -->
+
+    <div class="root2">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <img class="lazyload" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589187665358&di=0118a4491fc8067c9845bc4597566901&imgtype=0&src=http%3A%2F%2Fzkres0.myzaker.com%2F201806%2F5b2cbabaa07aec900301e844_640.jpg"  src="" />
+        <div class="div4"></div>
+        <div class="div4"></div>
+        <div class="div4"></div>
+        <img class="lazyload" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589187665358&di=0118a4491fc8067c9845bc4597566901&imgtype=0&src=http%3A%2F%2Fzkres0.myzaker.com%2F201806%2F5b2cbabaa07aec900301e844_640.jpg"  src="" />
+
+    </div>
+</body>
+<script>
+    Tools.LazyLoad.init({
+        root: document.querySelector('.root2'),
+    });
+</script>
+</html>

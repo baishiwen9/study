@@ -18,6 +18,7 @@
      this.left = left;
      this.right = right;
      this.show = show;
+     this.count = 0;
  } 
 
  function show() {
@@ -38,6 +39,7 @@
      this.find = find;
      this.remove = remove;
      this.nodeCount = 0;
+     this.update = update;
     //  this.getNodeCount = getNodeCount; //节点个数
  }
 
@@ -221,5 +223,11 @@ function removeNode(node, data) {
 //         inOrder(node.right);
 //     }
 // }
+
+function update(data) {
+    const node = this.find(data);
+    node.count++;
+    return node;
+}
 
 export default BST;
